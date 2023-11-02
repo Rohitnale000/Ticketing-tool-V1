@@ -1,0 +1,106 @@
+#title_val,#Description_val,#fname_val,#lname_val,#uname_val,#email_val,#pass_val,#cpass_val{
+    display: none;
+    color: red;
+   
+}
+
+@media only screen and (max-width: 505px) {
+    .ticket-list-title{
+		text-align: center;
+		
+	}
+	.top-btn{
+		text-align: center;
+	}
+	.btn-group>button{
+		display: block;
+		padding: 10px;
+	}
+	.toggle-button{
+		display: block;
+		padding: 20px;
+		margin: 15px 50px 15px 50px;;
+	}
+	
+}
+
+
+#table-text{
+    display: none;
+    font-weight: bold;
+}
+
+.dropdown-toggle::after {
+    display: none;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.toggle-button{
+	position: relative;
+	display: inline-block;
+	width: 150px;
+    height: 50px;
+    margin-left: 10px;
+}
+.toggle-button input{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.toggle-button .knob{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #0d6efd;
+	transition: .2s;
+	border-radius: 7px;
+}
+.toggle-button .knob:before{
+	background-color: #ffffff;
+	color: #000000;
+	position: absolute;
+	content: 'List';
+    height: 40px;
+    width: 60.5px;
+	left: 4px;
+	bottom: 4px;
+	transition: .2s;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.toggle-button input:checked + .knob{
+	background-color: #0d6efd;
+}
+.toggle-button input:focus + .knob{
+	box-shadow: 0 0 1px #0d6efd;
+}
+.toggle-button input:checked + .knob:before{
+	color: #000000;
+	content: 'Details';
+	background-color: #ffffff;
+	-webkit-transform: translateX(80.5px);
+	-ms-transform: translateX(80.5px);
+	transform: translateX(80.5px);
+}
+
+.body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.tagClass,.priorityClass,.cartTagClass,.cartPriorityClass{
+	padding: 3px;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
